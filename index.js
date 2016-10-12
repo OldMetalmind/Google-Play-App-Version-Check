@@ -11,10 +11,10 @@ slack.setWebhook(webhookUri);
 
 var warnTeam = function() {
   slack.webhook({
-    channel: "#android",
-    username: "wingman",
+    channel: config.slack.channel,
+    username: "googleplaybot",
     icon_emoji: ":ghost:",
-    text: "App Stopover updated"
+    text: config.slack.message
   }, function(err, response) {
     console.log(response);
     if (!error && response.statusCode == 200) {
