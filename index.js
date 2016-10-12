@@ -31,9 +31,12 @@ var checkVersion = function() {
     console.log("current version:" + gp_version);
     if(gp_version.toString().trim() !== version.toString().trim())
     {
-      console.log("Version updated");
+      console.log("["+Date.now()+"] Version updated");
       process.exit()
       warnTeam();
+    }
+    else {
+      console.log("["+Date.now()+"] Version not updated" );
     }
   }
   });
