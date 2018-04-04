@@ -10,6 +10,6 @@ config.slack.channel = '<slack-channel>';
 config.slack.message = '<slack-message>';
 config.app = {};
 config.app.currentVersion = "<current-version>";
-config.app.packageName = "<android-app-package-name"
+config.app.packageName = "<android-app-package-name>"
 module.exports = config;
 ```
